@@ -47,11 +47,15 @@ pipeline {
             steps {
                 script {
                     echo "Building Docker Image and Pusshing it with new version to Dockerhub Repo"
-                    dockerLogin('sami_docker_hub_credentials')
+                    withCredentials([script.usernamePassword(credentialsId: 'sami_docker_hub_credentials', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+                        script.sh "echo $script.PASS | docker login -u $script.USER --password-stdin"
+                    }
+                        
                     dockerBuildImage("${env.IMAGE_NAME}")
                     dockerPush("${env.IMAGE_NAME}")
                 }
             }
+                  
         }
     }
 }
