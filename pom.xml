@@ -39,6 +39,12 @@
 <dependencies>
         <!-- LOGGING DEPENDENCIES -->
         <dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-core</artifactId>
+            <version>2.9.3</version> <!-- Use the latest version -->
+        </dependency>
+
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
