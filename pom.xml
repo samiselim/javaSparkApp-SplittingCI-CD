@@ -124,8 +124,6 @@
             <version>${jetty.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- Add other dependencies as needed -->
-    </dependency>
     <dependency>
         <groupId>org.sql2o</groupId>
         <artifactId>sql2o</artifactId>
