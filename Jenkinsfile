@@ -53,5 +53,20 @@ pipeline {
                 }
             }
         }
+        stage("Commit Version Update") {
+            steps {
+                script {
+                    // gv.commitChanges()
+                    echo "****************** Starting Adding ,Commiting and pushing Changes to Git hub  **************"
+                    githubLogin('javaSparkApp-SplittingCI-CD' , 'sami_githubAcess')
+                    githubAddAllChanges()
+                    githubCommitAllChanges('This Commit from jenkins to update version number of the application for the next build')
+                    githubPush()
+                }
+            }
+        }
+        stage("Trigger CD Job ") {
+
+        }   
     }
 }
