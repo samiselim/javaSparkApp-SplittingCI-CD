@@ -1,0 +1,4 @@
+1)creating maven project using this command :
+    mvn archetype:generate -DgroupId=com.example -DartifactId=spark-example -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+2) edit this project as you want 
+3) 
