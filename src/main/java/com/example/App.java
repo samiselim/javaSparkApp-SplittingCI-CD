@@ -8,10 +8,10 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExtendedSparkApp implements SparkApplication {
+public class App implements SparkApplication {
 
     public static void main(String[] args) {
-        new ExtendedSparkApp().init();
+        new App().init();
     }
 
     @Override
