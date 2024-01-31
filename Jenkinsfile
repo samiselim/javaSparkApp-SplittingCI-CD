@@ -22,7 +22,7 @@ pipeline {
         stage("Increment Version"){
             steps{
                 script{
-                    echo "Incrementing App Version"
+                    echo "Incrementing App Version in pom.xml"
                     
                     sh 'mvn build-helper:parse-version versions:set \
                     -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.nextIncrementalVersion}\
