@@ -68,7 +68,7 @@ pipeline {
         stage("Trigger CD Job ") {
                 steps {
                     script {
-
+                        echo "Hello "
                     }
             }   
         }
