@@ -54,13 +54,6 @@
         <artifactId>spark-template-velocity</artifactId>
         <version>2.9.3</version> <!-- Use the same version as spark-core -->
     </dependency>
-<!-- https://mvnrepository.com/artifact/com.sparkjava/spark-template-velocity -->
-    <dependency>
-        <groupId>com.sparkjava</groupId>
-        <artifactId>spark-template-velocity</artifactId>
-        <version>1.0</version>
-    </dependency>
-
     </dependencies>
 
 </project>
