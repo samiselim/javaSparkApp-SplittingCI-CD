@@ -56,7 +56,6 @@ pipeline {
         stage("Commit Version Update") {
             steps {
                 script {
-                    // gv.commitChanges()
                     echo "****************** Starting Adding ,Commiting and pushing Changes to Git hub  **************"
                     githubLogin('javaSparkApp-SplittingCI-CD' , 'sami_githubAcess')
                     githubAddAllChanges()
